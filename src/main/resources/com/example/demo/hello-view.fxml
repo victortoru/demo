@@ -50,7 +50,7 @@
                 <Button mnemonicParsing="false" text="File" />
                   <Button mnemonicParsing="false" text="Help" />
               </items>
-            </ToolBar>
+            </ToolBar>j
          </children>
       </AnchorPane>
    </children>
