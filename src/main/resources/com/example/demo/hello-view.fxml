@@ -2,17 +2,17 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
    <children>
       <AnchorPane layoutX="300.0" layoutY="-1.0" prefHeight="400.0" prefWidth="301.0">
          <children>
-            <Button layoutX="76.0" layoutY="281.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" text="COMENÇA">
+            <Button fx:id="Comenzar" layoutX="76.0" layoutY="281.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" text="COMENÇA">
                <font>
                   <Font size="15.0" />
                </font>
@@ -21,36 +21,39 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Opcion" />
+               </toggleGroup>
             </RadioButton>
-            <RadioButton layoutX="56.0" layoutY="130.0" mnemonicParsing="false" text="Human VS Human">
+            <RadioButton fx:id="Modo_Humanos" layoutX="56.0" layoutY="130.0" mnemonicParsing="false" selected="true" text="Human VS Human" toggleGroup="$Opcion">
                <font>
                   <Font size="15.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="56.0" layoutY="180.0" mnemonicParsing="false" text="Human VS Computer">
+            <RadioButton fx:id="Modo_HumanovsComputer" layoutX="56.0" layoutY="180.0" mnemonicParsing="false" text="Human VS Computer" toggleGroup="$Opcion">
                <font>
                   <Font size="15.0" />
                </font>
             </RadioButton>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="-6.0" layoutY="-1.0" prefHeight="400.0" prefWidth="328.0">
+      <AnchorPane fx:id="Modo_ordenadores" layoutX="-6.0" layoutY="-1.0" prefHeight="400.0" prefWidth="328.0">
          <children>
-            <Button layoutX="214.0" layoutY="256.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
-            <Button layoutX="14.0" layoutY="256.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
-            <Button layoutX="114.0" layoutY="256.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
-            <Button layoutX="214.0" layoutY="156.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
-            <Button layoutX="114.0" layoutY="156.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
-            <Button layoutX="14.0" layoutY="156.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
-            <Button layoutX="214.0" layoutY="56.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
-            <Button layoutX="114.0" layoutY="56.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
-            <Button layoutX="14.0" layoutY="56.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="boton9" layoutX="214.0" layoutY="256.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="boton7" layoutX="14.0" layoutY="256.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="boton8" layoutX="114.0" layoutY="256.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="boton6" layoutX="214.0" layoutY="156.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="boton5" layoutX="114.0" layoutY="156.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="boton4" layoutX="14.0" layoutY="156.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="boton3" layoutX="214.0" layoutY="56.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="boton2" layoutX="114.0" layoutY="56.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="boton1" layoutX="14.0" layoutY="56.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
             <ToolBar layoutX="7.0" prefHeight="40.0" prefWidth="600.0">
               <items>
                 <Button mnemonicParsing="false" text="File" />
                   <Button mnemonicParsing="false" text="Help" />
               </items>
-            </ToolBar>j
+            </ToolBar>
          </children>
       </AnchorPane>
    </children>
